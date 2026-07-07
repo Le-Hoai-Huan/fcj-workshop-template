@@ -1,5 +1,5 @@
 ---
-title: "Week 4 Worklog: Containers & ECS"
+title: "Week 4 Worklog: DNS, CLI & Backup"
 date: 2026-07-07
 weight: 4
 chapter: false
@@ -7,22 +7,22 @@ pre: " <b> 1.4. </b> "
 ---
 
 ### Week 4 Objectives:
-- Understand the core concepts of Route 53, AWS CLI, AWS Backup.
-- Gain hands-on experience by completing the assigned lab modules.
-- Learn how to troubleshoot and verify configurations in AWS.
+- Configure domain names and routing policies using Amazon Route 53.
+- Master the AWS CLI for managing resources programmatically.
+- Implement centralized data protection using AWS Backup.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | - Read AWS documentation and best practices for Route 53<br>- Prepare prerequisite resources for Module 10 | 20/04/2026 | 20/04/2026 | <https://000010.awsstudygroup.com> |
-| 2 | - Test and verify the Route 53 configuration<br>- Clean up temporary resources used during Module 10 | 21/04/2026 | 21/04/2026 | <https://000010.awsstudygroup.com> |
-| 3 | - Read AWS documentation and best practices for AWS CLI<br>- Review theoretical concepts of AWS CLI | 22/04/2026 | 22/04/2026 | <https://000011.awsstudygroup.com> |
-| 4 | - Clean up temporary resources used during Module 11<br>- Test and verify the AWS CLI configuration | 23/04/2026 | 23/04/2026 | <https://000011.awsstudygroup.com> |
-| 5 | - Prepare prerequisite resources for Module 13<br>- Read AWS documentation and best practices for AWS Backup | 24/04/2026 | 24/04/2026 | <https://000013.awsstudygroup.com> |
-| 6 | - Test and verify the AWS Backup configuration<br>- Clean up temporary resources used during Module 13 | 25/04/2026 | 25/04/2026 | <https://000013.awsstudygroup.com> |
+| 2 | - Learn Amazon Route 53 DNS service<br>  + Domain registration<br>  + Public and Private Hosted Zones | 11/05/2026 | 11/05/2026 | <https://000010.awsstudygroup.com> |
+| 3 | - Create DNS records (A, CNAME, ALIAS, TXT)<br>- Understand Routing Policies (Simple, Weighted, Failover)<br>- Test DNS resolution | 12/05/2026 | 12/05/2026 | <https://000010.awsstudygroup.com> |
+| 4 | - Install and configure AWS Command Line Interface (CLI)<br>- Configure Access Key and Secret Key via `aws configure`<br>- Understand AWS CLI profiles | 13/05/2026 | 13/05/2026 | <https://000011.awsstudygroup.com> |
+| 5 | - Use CLI to interact with S3 (s3api, s3 sync, cp)<br>- Manage EC2 instances via command line<br>- Write basic shell scripts for automation | 14/05/2026 | 14/05/2026 | <https://000011.awsstudygroup.com> |
+| 6 | - Learn centralized AWS Backup service<br>  + Backup Plans, Backup Vaults<br>  + Lifecycle policies (transition to cold storage) | 15/05/2026 | 15/05/2026 | <https://000013.awsstudygroup.com> |
+| 7 | - Initialize a Backup Plan for periodic EBS snapshots<br>- Assign resource tags for automated backups<br>- Practice restoring data from recovery points | 16/05/2026 | 16/05/2026 | <https://000013.awsstudygroup.com> |
 
 
 ### Week 4 Achievements:
-- Successfully completed hands-on implementations for Route 53, AWS CLI, AWS Backup.
-- Verified that all deployed resources function correctly according to lab specifications.
-- Gained confidence in navigating the AWS console and using the associated services.
+- Successfully routed domain traffic using Route 53 simple and weighted policies.
+- Automated basic AWS tasks using CLI scripts and profiles.
+- Created automated backup plans and successfully restored an EBS volume.

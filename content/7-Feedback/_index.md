@@ -1,47 +1,45 @@
 ---
-title: "Sharing and Feedback"
-date: 2024-01-01
+title: "Sharing & Feedback"
+date: 2026-07-07
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+Below are my personal thoughts and feedback regarding the wonderful experience participating in the Bootcamp internship program at **First Cloud AI Journey (FCAJ)**:
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
-
-### Overall Evaluation
+### General Assessment
 
 **1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+The working environment at FCAJ is highly practical yet incredibly friendly. The interns are all passionate and talented. Even though we work primarily online and through virtual meetings, I always felt a strong connection with the entire team.
 
 **2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+The project mentor possesses profound knowledge of AWS and software architecture. When I was stuck with JWT errors in .NET or OAC configurations for CloudFront, the mentor never just handed me the solution; instead, they asked leading questions to help me debug and understand the root cause. The admin team was always attentive, providing Sandbox accounts and documentation promptly.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+**3. Alignment between Work and Major**  
+Developing this Serverless system went far beyond the basic knowledge I learned in university (which was mostly Monoliths). Applying Clean Architecture on .NET 10 and working directly with top-tier AWS Cloud services helped me leapfrog years of self-taught experience.
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+**4. Opportunities for Learning & Skill Development**  
+In 12 weeks, the amount of knowledge I absorbed was equivalent to a full academic year. Beyond coding skills (React, C#), I learned System Design thinking, CI/CD, Edge security (WAF), and especially Agile/Scrum teamwork skills.
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+**5. Culture & Team Spirit**  
+The team spirit in the PeriodIQ project was truly amazing. During the final phase of the project when deadlines were tight, team members didn't hesitate to stay up until 1-2 AM to cross-debug modules together (e.g., I helped test APIs for the Rule Engine developer). There was no "not my job" mentality here.
 
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+**6. Policies / Benefits for Interns**  
+Providing free AWS Sandbox accounts for practice is an invaluable perk. In addition, the periodic internal workshops sharing in-depth knowledge significantly broadened my horizons.
 
----
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+### Other Questions
+- **What were you most satisfied with during the internship?**  
+  The freedom to propose technological solutions. When I suggested moving WAF to the Global CLOUDFRONT scope for better protection, my idea was listened to and integrated into the official architecture.
+- **What do you think the program needs to improve for future interns?**  
+  I hope the program can organize a few Offline Networking events (geography permitting) so interns have the chance to interact face-to-face.
+- **Would you recommend this internship to your friends? Why?**  
+  100% yes. This isn't a place where you just "fetch coffee"; it's a practical Bootcamp that throws you into the toughest enterprise problems, helping you grow exponentially.
 
----
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+### Proposals & Desires
+- **Do you have any suggestions to improve the internship experience?**  
+  It would be great to provide more case studies on AWS Cost Optimization so interns gain a comprehensive view not just technically, but also economically.
+- **Do you want to continue with this program in the future?**
+  I eagerly look forward to participating in more advanced FCAJ courses, or returning as a teaching assistant/mentor to guide the next batches of interns.

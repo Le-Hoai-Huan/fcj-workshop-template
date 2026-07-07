@@ -16,9 +16,9 @@ pre: " <b> 5. </b> "
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
 2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Lê Hoài Huân - Auth & User Profile](5.3-Nguoi1-Auth/)
+3. [Lê Hoài Huân - Auth & User Profile](5.3-Nguoi1-Auth/)*(vai trò của tôi - ghi chi tiết bên dưới)*
 4. [Trần Anh Tài - Rule Engine & Sinh giáo án](5.4-Nguoi2-RuleEngine/)
 5. [Lê Hữu Duy Hoàng - Tiến trình & Async Notification](5.5-Nguoi3-Async/)
 6. [Chương Tử Luân - Admin Panel & Data](5.6-Nguoi4-Admin/)
-7. [Phạm Văn Sỹ - CI/CD & Monitoring](5.7-Nguoi5-CICD/) *(vai trò của tôi - ghi chi tiết bên dưới)*
+7. [Phạm Văn Sỹ - CI/CD & Monitoring](5.7-Nguoi5-CICD/) 
 8. [Dọn dẹp tài nguyên](5.8-Cleanup/)

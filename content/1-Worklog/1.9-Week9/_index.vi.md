@@ -14,12 +14,12 @@ pre: " <b> 1.9. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 1 | - Họp nhóm: xem xét kiến trúc hệ thống PeriodIQ (thiết kế serverless 7 lớp trên AWS) và chia dự án thành 5 nhóm role | 25/05/2026 | 25/05/2026 | Project Repo |
-| 2 | - Đọc tài liệu kỹ thuật của dự án (giải thích kiến trúc, hướng dẫn schema DynamoDB) để hiểu toàn bộ hệ thống | 26/05/2026 | 26/05/2026 | Architecture Docs |
-| 3 | - Thiết lập quyền truy cập cho nhóm trên tài khoản AWS chung: tạo IAM Group cho mỗi role và IAM User | 27/05/2026 | 27/05/2026 | IAM Console |
-| 4 | - Nghiên cứu và chốt danh sách các dịch vụ AWS cho phân tầng được giao (Auth & User Profile). Đọc tài liệu về Cognito, API Gateway | 28/05/2026 | 28/05/2026 | AWS Docs |
-| 5 | - Vẽ sơ đồ kiến trúc cho lớp Xác thực. Xác định các điểm tích hợp. | 29/05/2026 | 29/05/2026 | Draw.io Diagram |
-| 6 | - Trình bày thiết kế kiến trúc ban đầu với nhóm. Thu thập phản hồi và tinh chỉnh luồng xác thực. | 30/05/2026 | 30/05/2026 | Meeting Notes |
+| 2 | - Họp nhóm kickoff dự án PeriodIQ, phân tích kiến trúc AWS Serverless 7 lớp và nhận nhiệm vụ Người 1 (Auth & User Profile). | 15/06/2026 | 15/06/2026 |  |
+| 3 | - Đọc tài liệu thiết kế hệ thống, phân tích luồng xác thực qua Cognito và bảo mật biên với WAF & CloudFront. | 16/06/2026 | 16/06/2026 |  |
+| 4 | - Thiết lập tài khoản AWS Sandbox, nghiên cứu thư viện xác thực JWT cho .NET 10 và TanStack Query cho React. | 17/06/2026 | 17/06/2026 |  |
+| 5 | - Vẽ sơ đồ kiến trúc chi tiết cho phân hệ Xác thực (Cognito -> CloudFront -> WAF -> .NET API). | 18/06/2026 | 18/06/2026 |  |
+| 6 | - Thiết kế schema bảng `UserProfile` trên DynamoDB và chuẩn bị danh sách API endpoints cho hồ sơ người dùng. | 19/06/2026 | 19/06/2026 |  |
+| 7 | - Trình bày phương án bảo mật JWT và bảo vệ CloudFront với nhóm, chốt scope công việc. | 20/06/2026 | 20/06/2026 |  |
 
 
 ### Kết quả đạt được tuần 9:

@@ -1,39 +1,39 @@
 ---
-title: "Self-Assessment"
-date: 2024-01-01
+title: "Self-evaluation"
+date: 2026-07-07
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+During my 12-week internship at **First Cloud AI Journey (FCAJ)** from **20/04/2026** to **12/07/2026**, I had the opportunity to learn, practice, and apply my programming knowledge to a large-scale real-world Cloud system.
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+I participated in the **PeriodIQ - Serverless Periodization Engine** project in the role of **Person 1 (Auth & User Profile)**. Through this project, I have significantly improved the following skills:
+- **Technical skills:** Mastering AWS Cognito, AWS WAF, Amazon CloudFront; Backend development with .NET 10 (Clean Architecture, xUnit, Moq); and Frontend development with React 19 + Vite.
+- **Soft skills:** System architecture analysis, teamwork via Git/GitHub, writing technical documentation, and time management.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+Regarding my work ethic, I proactively researched new technologies (e.g., handling Race Conditions when synchronizing JWT Sessions), strictly adhered to the project timeline, and actively supported other team members.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+To objectively reflect on my internship process, I evaluate myself based on the criteria below:
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
 
-### Needs Improvement
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | --- | --- | :---: | :---: | :---: |
+| 1 | **Professional Knowledge and Skills** | Mastered AWS Serverless architecture, successfully applied .NET and React | ✅ | ☐ | ☐ |
+| 2 | **Learning Ability** | Quickly absorbed new AWS services (WAF, CloudFront OAC) | ✅ | ☐ | ☐ |
+| 3 | **Proactiveness** | Independently researched JWT security solutions without waiting for prompts | ✅ | ☐ | ☐ |
+| 4 | **Sense of Responsibility** | Completed 15/15 Unit Tests for my module on time | ✅ | ☐ | ☐ |
+| 5 | **Discipline** | Adhered to code commit rules, attended all team sync meetings | ✅ | ☐ | ☐ |
+| 6 | **Progressiveness** | Willing to refactor code upon receiving mentor feedback on Clean Architecture | ☐ | ✅ | ☐ |
+| 7 | **Communication** | Clearly presented the authentication flow diagram to other team members | ☐ | ✅ | ☐ |
+| 8 | **Teamwork** | Coordinated smoothly with those in charge of the Rule Engine and Admin Panel | ✅ | ☐ | ☐ |
+| 9 | **Professional Conduct** | Listened to and respected feedback during Code Review sessions | ✅ | ☐ | ☐ |
+| 10 | **Problem Solving Mindset** | Successfully resolved React Strict Mode Session loss and setup WAF to block Bots | ✅ | ☐ | ☐ |
+| 11 | **Contribution to the Project** | Built a solid Auth foundation helping the entire PeriodIQ project run securely | ✅ | ☐ | ☐ |
+| 12 | **Overall** | General assessment of growth after the 3-month internship | ✅ | ☐ | ☐ |
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+### Areas for Improvement
+
+- Need to optimize public speaking skills to make demo presentations smoother and more confident.
+- Better time allocation between researching new technologies and coding features to avoid task accumulation at the end of sprints.
+- Need to dive deeper into advanced data structures on DynamoDB to further assist teammates.

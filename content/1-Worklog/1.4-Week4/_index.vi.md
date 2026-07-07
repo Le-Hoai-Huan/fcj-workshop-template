@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 4: Container & ECS"
+title: "Worklog Tuần 4: DNS, CLI & Sao lưu dữ liệu"
 date: 2026-07-07
 weight: 4
 chapter: false
@@ -7,22 +7,22 @@ pre: " <b> 1.4. </b> "
 ---
 
 ### Mục tiêu tuần 4:
-- Nắm vững các khái niệm cốt lõi của Route 53, AWS CLI, AWS Backup.
-- Tích lũy kinh nghiệm thực tế thông qua việc hoàn thành các bài thực hành.
-- Học cách kiểm tra và khắc phục sự cố cấu hình trên AWS.
+- Cấu hình tên miền và các chính sách định tuyến sử dụng Amazon Route 53.
+- Thành thạo công cụ AWS CLI để quản lý tài nguyên bằng dòng lệnh.
+- Triển khai các chính sách bảo vệ dữ liệu tập trung bằng AWS Backup.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 1 | - Tìm hiểu các khái niệm lý thuyết về Route 53<br>- Đọc tài liệu AWS và các thực hành tốt nhất cho Route 53 | 20/04/2026 | 20/04/2026 | <https://000010.awsstudygroup.com/vi/> |
-| 2 | - Kiểm thử và xác minh cấu hình Route 53<br>- Dọn dẹp các tài nguyên tạm thời sau khi xong Bài 10 | 21/04/2026 | 21/04/2026 | <https://000010.awsstudygroup.com/vi/> |
-| 3 | - Chuẩn bị các tài nguyên cần thiết cho Bài 11<br>- Đọc tài liệu AWS và các thực hành tốt nhất cho AWS CLI | 22/04/2026 | 22/04/2026 | <https://000011.awsstudygroup.com/vi/> |
-| 4 | - Dọn dẹp các tài nguyên tạm thời sau khi xong Bài 11<br>- Kiểm thử và xác minh cấu hình AWS CLI | 23/04/2026 | 23/04/2026 | <https://000011.awsstudygroup.com/vi/> |
-| 5 | - Tìm hiểu các khái niệm lý thuyết về AWS Backup<br>- Đọc tài liệu AWS và các thực hành tốt nhất cho AWS Backup | 24/04/2026 | 24/04/2026 | <https://000013.awsstudygroup.com/vi/> |
-| 6 | - Kiểm thử và xác minh cấu hình AWS Backup<br>- Hoàn thiện các bước cuối cùng của Bài 13 | 25/04/2026 | 25/04/2026 | <https://000013.awsstudygroup.com/vi/> |
+| 2 | - Tìm hiểu dịch vụ DNS Amazon Route 53<br>  + Đăng ký tên miền (Domain registration)<br>  + Khái niệm Public và Private Hosted Zone | 11/05/2026 | 11/05/2026 | <https://000010.awsstudygroup.com/vi/> |
+| 3 | - Tạo các bản ghi DNS (A, CNAME, ALIAS, TXT)<br>- Tìm hiểu và cấu hình Routing Policies (Simple, Weighted, Failover)<br>- Kiểm tra phân giải tên miền | 12/05/2026 | 12/05/2026 | <https://000010.awsstudygroup.com/vi/> |
+| 4 | - Cài đặt và cấu hình AWS Command Line Interface (CLI)<br>- Cấu hình Access Key và Secret Key qua `aws configure`<br>- Tìm hiểu các profile trong AWS CLI | 13/05/2026 | 13/05/2026 | <https://000011.awsstudygroup.com/vi/> |
+| 5 | - Sử dụng CLI tương tác với S3 (s3api, s3 sync, cp)<br>- Thao tác quản lý EC2 thông qua giao diện dòng lệnh<br>- Viết shell script tự động hóa tác vụ cơ bản | 14/05/2026 | 14/05/2026 | <https://000011.awsstudygroup.com/vi/> |
+| 6 | - Tìm hiểu dịch vụ AWS Backup tập trung<br>  + Backup Plans, Backup Vaults<br>  + Lifecycle policies (chuyển sang cold storage) | 15/05/2026 | 15/05/2026 | <https://000013.awsstudygroup.com/vi/> |
+| 7 | - Khởi tạo Backup Plan để sao lưu định kỳ EBS volume<br>- Gán tags cho tài nguyên để tự động backup<br>- Thực hành khôi phục (Restore) dữ liệu từ điểm sao lưu | 16/05/2026 | 16/05/2026 | <https://000013.awsstudygroup.com/vi/> |
 
 
 ### Kết quả đạt được tuần 4:
-- Triển khai thành công các bài thực hành cho Route 53, AWS CLI, AWS Backup.
-- Xác minh các tài nguyên đã tạo hoạt động chính xác theo yêu cầu của bài lab.
-- Nắm vững cách thao tác trên giao diện AWS Console và sử dụng các dịch vụ liên quan.
+- Định tuyến thành công lưu lượng tên miền bằng các chính sách của Route 53.
+- Tự động hóa các tác vụ AWS cơ bản bằng script CLI và quản lý profile.
+- Tạo thành công các kế hoạch sao lưu tự động và khôi phục dữ liệu từ EBS snapshot.

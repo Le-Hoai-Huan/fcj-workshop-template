@@ -8,9 +8,6 @@ chapter: false
     
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
 ### Student Information:
 &emsp; **Full Name:** Le Hoai Huan
@@ -19,7 +16,7 @@ chapter: false
 
 &emsp; **Email:** lehoaihuan@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** ho chi minh city university of technology
 
 &emsp; **Major:** Information Technology
 
@@ -29,7 +26,7 @@ chapter: false
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
+&emsp; **Internship Duration:** From 20/04/2026 to 12/7/2026
 
 ![Your profile picture](/images/avatar.png)
 

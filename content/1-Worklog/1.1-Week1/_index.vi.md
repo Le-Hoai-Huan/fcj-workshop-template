@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 1: Kiến thức Cơ bản AWS & Compute"
+title: "Worklog Tuần 1: Tài khoản AWS, IAM & VPC"
 date: 2026-07-07
 weight: 1
 chapter: false
@@ -7,22 +7,21 @@ pre: " <b> 1.1. </b> "
 ---
 
 ### Mục tiêu tuần 1:
-- Nắm vững các khái niệm cốt lõi của AWS Account, IAM, VPC.
-- Tích lũy kinh nghiệm thực tế thông qua việc hoàn thành các bài thực hành.
-- Học cách kiểm tra và khắc phục sự cố cấu hình trên AWS.
+- Thiết lập tài khoản AWS cơ bản, hiểu về IAM users, groups, roles và cách switch role.
+- Thiết kế và triển khai custom VPC (public/private subnet, routing, NAT) và giám sát mạng.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 1 | - Tìm hiểu các khái niệm lý thuyết về AWS Account<br>- Chuẩn bị các tài nguyên cần thiết cho Bài 1 | 30/03/2026 | 30/03/2026 | <https://000001.awsstudygroup.com/vi/> |
-| 2 | - Dọn dẹp các tài nguyên tạm thời sau khi xong Bài 1<br>- Kiểm thử và xác minh cấu hình AWS Account | 31/03/2026 | 31/03/2026 | <https://000001.awsstudygroup.com/vi/> |
-| 3 | - Chuẩn bị các tài nguyên cần thiết cho Bài 2<br>- Đọc tài liệu AWS và các thực hành tốt nhất cho IAM | 01/04/2026 | 01/04/2026 | <https://000002.awsstudygroup.com/vi/> |
-| 4 | - Dọn dẹp các tài nguyên tạm thời sau khi xong Bài 2<br>- Kiểm thử và xác minh cấu hình IAM | 02/04/2026 | 02/04/2026 | <https://000002.awsstudygroup.com/vi/> |
-| 5 | - Chuẩn bị các tài nguyên cần thiết cho Bài 3<br>- Tìm hiểu các khái niệm lý thuyết về VPC | 03/04/2026 | 03/04/2026 | <https://000003.awsstudygroup.com/vi/> |
-| 6 | - Dọn dẹp các tài nguyên tạm thời sau khi xong Bài 3<br>- Hoàn thiện các bước cuối cùng của Bài 3 | 04/04/2026 | 04/04/2026 | <https://000003.awsstudygroup.com/vi/> |
+| 2 | - Tạo tài khoản AWS và thiết lập bảo mật ban đầu<br>- Hoàn thành các nhiệm vụ để nhận credit miễn phí<br>- Tìm hiểu giao diện AWS Management Console | 20/04/2026 | 20/04/2026 | <https://000001.awsstudygroup.com/vi/> |
+| 3 | - Cấu hình thanh toán và bảo mật tài khoản (MFA)<br>- Xem xét các kiến trúc mẫu cho gói credit $200<br>- Thiết lập AWS Billing alert cơ bản | 21/04/2026 | 21/04/2026 | <https://000001.awsstudygroup.com/vi/> |
+| 4 | - Tìm hiểu AWS Identity and Access Management (IAM)<br>  + Khái niệm Users, Groups, Roles<br>  + Cấu hình IAM Policies cơ bản<br>- Tạo IAM Group và gán quyền thích hợp | 22/04/2026 | 22/04/2026 | <https://000002.awsstudygroup.com/vi/> |
+| 5 | - Thực hành tạo IAM User và cấp quyền đăng nhập<br>- Khởi tạo IAM Role cho các dịch vụ AWS<br>- Thực hành switch role và kiểm tra quyền hạn | 23/04/2026 | 23/04/2026 | <https://000002.awsstudygroup.com/vi/> |
+| 6 | - Tìm hiểu các khái niệm cốt lõi của AWS VPC<br>  + CIDR block, Public & Private Subnet<br>  + Route Table, Internet Gateway (IGW)<br>- Thiết kế và triển khai custom VPC ban đầu | 24/04/2026 | 24/04/2026 | <https://000003.awsstudygroup.com/vi/> |
+| 7 | - Cấu hình NAT Gateway cho Private Subnet<br>- Thiết lập VPC Flow Logs để giám sát lưu lượng mạng<br>- Tìm hiểu về Security Groups và Network ACLs | 25/04/2026 | 25/04/2026 | <https://000003.awsstudygroup.com/vi/> |
 
 
 ### Kết quả đạt được tuần 1:
-- Triển khai thành công các bài thực hành cho AWS Account, IAM, VPC.
-- Xác minh các tài nguyên đã tạo hoạt động chính xác theo yêu cầu của bài lab.
-- Nắm vững cách thao tác trên giao diện AWS Console và sử dụng các dịch vụ liên quan.
+- Hoàn thành thiết lập tài khoản AWS, nhận credit miễn phí và cấu hình MFA.
+- Nắm vững access control qua việc tạo và quản lý thành thạo IAM Group, User, Role.
+- Khởi tạo thành công kiến trúc mạng VPC bảo mật, biết cách cấu hình các bảng định tuyến.

@@ -13,7 +13,7 @@ chapter: false
 
 &emsp; **Email:** lehoaihuan@gmail.com
 
-&emsp; **Trường:** Đại học Công nghệ TP.HCM
+&emsp; **Trường:** Trường Đại học Công nghệ TP.HCM
 
 &emsp; **Ngành:** Công nghệ thông tin
 

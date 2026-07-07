@@ -14,12 +14,12 @@ pre: " <b> 1.11. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | - Create a CloudFront distribution `periodiq-frontend-dev` 📄 for the project. Test the endpoint. | 08/06/2026 | 08/06/2026 | Screenshot AWS Console - CloudFront |
-| 2 | - Define WAF Web ACLs and managed rulesets. Add AWS Managed Rules for common vulnerabilities. | 09/06/2026 | 09/06/2026 | Screenshot AWS Console - WAF Rules |
-| 3 | - Implement rate limiting rules to prevent DDoS on the authentication endpoints. | 10/06/2026 | 10/06/2026 | WAF Block Evidence |
-| 4 | - Attach WAF to the CloudFront distribution and API Gateway. Verify response headers. | 11/06/2026 | 11/06/2026 | CloudFront / WAF Headers |
-| 5 | - Simulate malicious traffic to test WAF blocking. Monitor WAF metrics and logs in CloudWatch. | 12/06/2026 | 12/06/2026 | CloudWatch Metrics |
-| 6 | - Generate test user accounts and verify CloudWatch logs contain `POST /api/users/login` 📄 with HTTP 200. | 13/06/2026 | 13/06/2026 | CloudWatch Log Evidence |
+| 2 | - Provision WebACL on AWS WAF (CLOUDFRONT scope in us-east-1), enable AWS Managed Rules (SQLi, XSS, Bot protection). | 29/06/2026 | 29/06/2026 |  |
+| 3 | - Configure Rate limiting rules to prevent DDoS, attach WAF to CloudFront distribution via WebACLId. | 30/06/2026 | 30/06/2026 |  |
+| 4 | - Setup CloudFront: S3 Origin (Frontend) and API Gateway Origin (Backend), configure `/api/*` behavior. | 01/07/2026 | 01/07/2026 |  |
+| 5 | - React Frontend Development: Build UI for Login, Register, Forgot Password, and User Profile pages. | 02/07/2026 | 02/07/2026 |  |
+| 6 | - Frontend Integration: Write Axios interceptor for automatic JWT Bearer token injection and refresh logic. | 03/07/2026 | 03/07/2026 |  |
+| 7 | - Conduct E2E testing for the registration -> OTP -> login -> create profile flow on the Web UI. | 04/07/2026 | 04/07/2026 |  |
 
 
 ### Week 11 Achievements:

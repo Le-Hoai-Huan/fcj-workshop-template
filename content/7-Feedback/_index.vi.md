@@ -1,44 +1,45 @@
 ---
 title: "Chia sẻ, đóng góp ý kiến"
-date: 2024-01-01
+date: 2026-07-07
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+Dưới đây là những suy nghĩ và đóng góp ý kiến cá nhân của tôi về những trải nghiệm tuyệt vời khi tham gia chương trình thực tập Bootcamp tại **First Cloud AI Journey (FCAJ)**:
 
 ### Đánh giá chung
 
 **1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Môi trường thực tập tại FCAJ mang tính thực chiến rất cao nhưng cũng vô cùng thân thiện. Các bạn thực tập sinh đều rất nhiệt huyết và tài năng. Tuy làm việc chủ yếu qua không gian mạng và các buổi meeting online, mình luôn cảm nhận được sự kết nối chặt chẽ của cả đội ngũ.
 
 **2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Mentor của dự án là một người có kiến thức vô cùng sâu rộng về AWS và kiến trúc phần mềm. Những lúc mình bế tắc với lỗi JWT trên .NET hay cấu hình OAC cho CloudFront, mentor không bao giờ đưa ngay đáp án mà luôn đặt ra những câu hỏi gợi mở để mình tự debug và tìm ra bản chất vấn đề. Đội ngũ admin thì luôn chu đáo trong việc cung cấp tài khoản Sandbox và tài liệu kịp thời.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Công việc phát triển hệ thống Serverless này vượt xa những kiến thức cơ bản mình được học trên trường (chủ yếu là Monolith). Việc được áp dụng Clean Architecture trên .NET 10 và làm việc trực tiếp với các dịch vụ Cloud hàng đầu của AWS giúp mình rút ngắn được nhiều năm kinh nghiệm tự mày mò.
 
 **4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+Trong 12 tuần, lượng kiến thức mình nạp vào tương đương với cả một năm học. Không chỉ kỹ năng code (React, C#), mình còn học được tư duy System Design, CI/CD, bảo mật hệ thống ở biên (WAF), và đặc biệt là kỹ năng làm việc nhóm Agile/Scrum.
 
 **5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+Tinh thần đồng đội trong team dự án PeriodIQ thật sự rất tuyệt vời. Khi giai đoạn cuối dự án có nhiều deadline gắt gao, mọi người không ngần ngại thức đến 1-2 giờ sáng để cùng nhau debug chéo các module (ví dụ mình hỗ trợ test API cho bạn làm Rule Engine). Không có khái niệm "việc của ai người nấy làm" ở đây.
 
 **6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+Chương trình cung cấp tài khoản AWS Sandbox miễn phí để thực hành là một đặc quyền vô giá. Bên cạnh đó, các buổi workshop nội bộ định kỳ chia sẻ kiến thức chuyên sâu đã giúp mình mở mang tầm mắt rất nhiều.
 
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+- **Điều bạn hài lòng nhất trong thời gian thực tập?**  
+  Sự tự do trong việc đề xuất giải pháp công nghệ. Khi mình đề xuất chuyển WAF từ Regional sang Global CLOUDFRONT để bảo vệ tốt hơn, ý kiến đó đã được lắng nghe và đưa vào kiến trúc chính thức.
+- **Điều bạn nghĩ chương trình cần cải thiện cho các thực tập sinh sau?**  
+  Mình hy vọng chương trình có thể tổ chức thêm một vài buổi Offline Networking (nếu điều kiện địa lý cho phép) để các bạn thực tập sinh có cơ hội giao lưu trực tiếp.
+- **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**  
+  Chắc chắn 100% có. Đây không phải là nơi "bưng bê pha trà", mà là một Bootcamp thực chiến ném bạn vào những bài toán hóc búa nhất của doanh nghiệp, giúp bạn trưởng thành vượt bậc.
 
 
 ### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+- **Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?**  
+  Có thể cung cấp thêm các case-study về tối ưu hóa chi phí (Cost Optimization) trên AWS để thực tập sinh có cái nhìn toàn diện hơn không chỉ về mặt kỹ thuật mà còn về bài toán kinh tế.
+- **Bạn có muốn tiếp tục chương trình này trong tương lai?**
+  Mình rất mong muốn có cơ hội được tham gia các khóa chuyên sâu hơn của FCAJ, hoặc trở lại với vai trò trợ giảng/mentor để hướng dẫn các lứa thực tập sinh tiếp theo.

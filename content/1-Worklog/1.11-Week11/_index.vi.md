@@ -14,12 +14,12 @@ pre: " <b> 1.11. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 1 | - Tạo CloudFront distribution `periodiq-frontend-dev` 📄 cho dự án. Kiểm thử endpoint. | 08/06/2026 | 08/06/2026 | Screenshot AWS Console - CloudFront |
-| 2 | - Định nghĩa WAF Web ACLs và các tập quy tắc quản lý. Thêm AWS Managed Rules cho các lỗ hổng phổ biến. | 09/06/2026 | 09/06/2026 | Screenshot AWS Console - WAF Rules |
-| 3 | - Cài đặt quy tắc giới hạn tốc độ (rate limit) để chống DDoS trên các endpoint xác thực. | 10/06/2026 | 10/06/2026 | WAF Block Evidence |
-| 4 | - Đính kèm WAF vào CloudFront distribution và API Gateway. Xác minh các header phản hồi. | 11/06/2026 | 11/06/2026 | CloudFront / WAF Headers |
-| 5 | - Giả lập truy cập độc hại để kiểm thử tính năng chặn của WAF. Giám sát các metric WAF trong CloudWatch. | 12/06/2026 | 12/06/2026 | CloudWatch Metrics |
-| 6 | - Sinh tài khoản test và kiểm tra CloudWatch logs có `POST /api/users/login` 📄 với HTTP 200. | 13/06/2026 | 13/06/2026 | CloudWatch Log Evidence |
+| 2 | - Khởi tạo WebACL trên AWS WAF (scope CLOUDFRONT tại us-east-1), bật AWS Managed Rules (chặn SQLi, XSS, Bot). | 29/06/2026 | 29/06/2026 |  |
+| 3 | - Cấu hình rule giới hạn tốc độ (Rate limiting) để chống DDoS, gắn WAF vào CloudFront distribution qua thuộc tính WebACLId. | 30/06/2026 | 30/06/2026 |  |
+| 4 | - Setup CloudFront: Origin S3 (Frontend) và Origin API Gateway (Backend), định tuyến behavior `/api/*`. | 01/07/2026 | 01/07/2026 |  |
+| 5 | - Lập trình React Frontend: Xây dựng UI trang Login, Register, Forgot Password và User Profile. | 02/07/2026 | 02/07/2026 |  |
+| 6 | - Tích hợp Frontend: Viết Axios interceptor tự động đính kèm JWT Bearer token và logic auto refresh token. | 03/07/2026 | 03/07/2026 |  |
+| 7 | - Kiểm thử End-to-End luồng đăng ký -> nhận OTP -> đăng nhập -> tạo User Profile trên giao diện Web. | 04/07/2026 | 04/07/2026 |  |
 
 
 ### Kết quả đạt được tuần 11:

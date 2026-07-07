@@ -1,5 +1,5 @@
 ---
-title: "Week 1 Worklog: AWS Fundamentals & Core Compute"
+title: "Week 1 Worklog: AWS Account, IAM & VPC"
 date: 2026-07-07
 weight: 1
 chapter: false
@@ -7,22 +7,21 @@ pre: " <b> 1.1. </b> "
 ---
 
 ### Week 1 Objectives:
-- Understand the core concepts of AWS Account, IAM, VPC.
-- Gain hands-on experience by completing the assigned lab modules.
-- Learn how to troubleshoot and verify configurations in AWS.
+- Set up basic AWS accounts, understand IAM users, groups, roles and role switching.
+- Design and deploy custom VPCs (public/private subnets, routing, NAT) and monitor networks.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | - Prepare prerequisite resources for Module 1<br>- Review theoretical concepts of AWS Account | 30/03/2026 | 30/03/2026 | <https://000001.awsstudygroup.com> |
-| 2 | - Complete remaining steps for Module 1<br>- Test and verify the AWS Account configuration | 31/03/2026 | 31/03/2026 | <https://000001.awsstudygroup.com> |
-| 3 | - Prepare prerequisite resources for Module 2<br>- Review theoretical concepts of IAM | 01/04/2026 | 01/04/2026 | <https://000002.awsstudygroup.com> |
-| 4 | - Clean up temporary resources used during Module 2<br>- Test and verify the IAM configuration | 02/04/2026 | 02/04/2026 | <https://000002.awsstudygroup.com> |
-| 5 | - Review theoretical concepts of VPC<br>- Read AWS documentation and best practices for VPC | 03/04/2026 | 03/04/2026 | <https://000003.awsstudygroup.com> |
-| 6 | - Clean up temporary resources used during Module 3<br>- Test and verify the VPC configuration | 04/04/2026 | 04/04/2026 | <https://000003.awsstudygroup.com> |
+| 2 | - Create AWS Account and setup initial security<br>- Complete tasks to receive free credits<br>- Explore the AWS Management Console | 20/04/2026 | 20/04/2026 | <https://000001.awsstudygroup.com> |
+| 3 | - Configure billing and MFA security<br>- Review sample architectures for the $200 credit tier<br>- Setup basic AWS Billing alerts | 21/04/2026 | 21/04/2026 | <https://000001.awsstudygroup.com> |
+| 4 | - Learn AWS Identity and Access Management (IAM)<br>  + Concepts of Users, Groups, Roles<br>  + Basic IAM Policies<br>- Create IAM Group and assign permissions | 22/04/2026 | 22/04/2026 | <https://000002.awsstudygroup.com> |
+| 5 | - Practice creating IAM User and granting access<br>- Initialize IAM Role for AWS services<br>- Practice role switching and verifying permissions | 23/04/2026 | 23/04/2026 | <https://000002.awsstudygroup.com> |
+| 6 | - Learn core concepts of AWS VPC<br>  + CIDR block, Public & Private Subnet<br>  + Route Table, Internet Gateway (IGW)<br>- Design and deploy a custom VPC | 24/04/2026 | 24/04/2026 | <https://000003.awsstudygroup.com> |
+| 7 | - Configure NAT Gateway for Private Subnets<br>- Set up VPC Flow Logs for network monitoring<br>- Understand Security Groups and Network ACLs | 25/04/2026 | 25/04/2026 | <https://000003.awsstudygroup.com> |
 
 
 ### Week 1 Achievements:
-- Successfully completed hands-on implementations for AWS Account, IAM, VPC.
-- Verified that all deployed resources function correctly according to lab specifications.
-- Gained confidence in navigating the AWS console and using the associated services.
+- Completed AWS account setup, claimed free credits, and configured MFA.
+- Mastered access control by creating and managing IAM Groups, Users, and Roles.
+- Successfully initialized a secure VPC architecture and configured route tables.

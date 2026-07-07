@@ -14,15 +14,14 @@ pre: " <b> 1.12. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 1 | - Thực hiện kiểm thử toàn trình (E2E) cho luồng Xác thực. Kiểm thử các trường hợp ngoại lệ (sai mật khẩu, hết hạn token). | 15/06/2026 | 15/06/2026 | E2E Test Report |
-| 2 | - Sửa các lỗi liên quan đến việc hết hạn và làm mới token. Tối ưu hóa code Lambda để cải thiện hiệu năng. | 16/06/2026 | 16/06/2026 | Git Commits |
-| 3 | - Tối ưu hóa các role thực thi IAM (đặc quyền tối thiểu). Xem xét tính tuân thủ trên Security Hub cho tài nguyên Auth. | 17/06/2026 | 17/06/2026 | IAM Policy Review |
-| 4 | - Viết tài liệu kỹ thuật cho module Xác thực. Document các API endpoint và payload xác thực. | 18/06/2026 | 18/06/2026 | README.md |
-| 5 | - Chuẩn bị slide thuyết trình làm nổi bật kiến trúc xác thực serverless và các tính năng bảo mật. | 19/06/2026 | 19/06/2026 | Presentation Slides |
-| 6 | - Thuyết trình và bàn giao dự án cuối khóa. Trình diễn module Xác thực đang hoạt động cho giảng viên. | 20/06/2026 | 20/06/2026 | Final Demo |
+| 2 | - Thực hiện kiểm thử toàn trình (E2E) luồng xác thực (sai mật khẩu, hết hạn token) trên React Frontend. | 06/07/2026 | 06/07/2026 |  |
+| 3 | - Giả lập truy cập độc hại bằng script để kiểm thử tính năng chặn của WAF và phân tích CloudWatch Logs. | 07/07/2026 | 07/07/2026 |  |
+| 4 | - Refactor code .NET và React, xử lý các lỗi bảo mật phát hiện trong quá trình kiểm thử. | 08/07/2026 | 08/07/2026 |  |
+| 5 | - Viết tài liệu kỹ thuật cho module Auth & User Profile, cập nhật README.md hướng dẫn tích hợp JWT. | 09/07/2026 | 09/07/2026 |  |
+| 6 | - Tổng kết đánh giá cá nhân, soạn thảo báo cáo tiến độ và duy trì các tài nguyên AWS dùng chung cho demo cuối khóa. | 10/07/2026 | 10/07/2026 |  |
 
 
 ### Kết quả đạt được tuần 12:
 - Giải quyết toàn bộ các lỗi ngoại lệ trong quá trình kiểm thử E2E.
 - Bảo mật các IAM role theo nguyên tắc đặc quyền tối thiểu.
-- Bàn giao tài liệu kỹ thuật toàn diện và thuyết trình thành công module Xác thực.
+- Hoàn thành tài liệu báo cáo đánh giá cá nhân, tóm tắt quá trình triển khai module Xác thực và chuẩn bị thành công cho buổi thuyết trình demo cuối khóa.

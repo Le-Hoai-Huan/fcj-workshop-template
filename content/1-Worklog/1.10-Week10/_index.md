@@ -14,12 +14,12 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | - Provision the Cognito User Pool via Console. Configure password policies and MFA settings. | 01/06/2026 | 01/06/2026 | Screenshot AWS Console - Cognito |
-| 2 | - Configure App Clients and domain for Cognito. Test the hosted UI for sign-up and sign-in. | 02/06/2026 | 02/06/2026 | Screenshot AWS Console - App Client |
-| 3 | - Develop Lambda function `periodiq-auth-post-confirmation` 📄. Add IAM role for Lambda to write to DynamoDB. | 03/06/2026 | 03/06/2026 | Screenshot AWS Console - Lambda |
-| 4 | - Set up API Gateway route `ANY /api/users/profile` 📄. Create resources and methods. | 04/06/2026 | 04/06/2026 | Screenshot AWS Console - API Gateway |
-| 5 | - Integrate API Gateway with Cognito Authorizer. Ensure endpoints are protected by JWT tokens. | 05/06/2026 | 05/06/2026 | JWT Integration Docs |
-| 6 | - Test registration and login flows using Postman. Verify tokens are passed correctly. | 06/06/2026 | 06/06/2026 | Postman Evidence |
+| 2 | - Provision Amazon Cognito User Pool, configure App Client, and setup User Groups (Users, Admins). | 22/06/2026 | 22/06/2026 |  |
+| 3 | - Setup email OTP verification flow for new user registrations. | 23/06/2026 | 23/06/2026 |  |
+| 4 | - .NET Backend Development: Configure JWT Bearer Authentication in `Program.cs` to validate Cognito tokens. | 24/06/2026 | 24/06/2026 |  |
+| 5 | - .NET Backend Development: Create `UserProfilesController` (Profile CRUD, mapping Cognito sub ID to DynamoDB). | 25/06/2026 | 25/06/2026 |  |
+| 6 | - Configure `[Authorize]` Middleware to enforce role-based access control (RBAC) for Users and Admins. | 26/06/2026 | 26/06/2026 |  |
+| 7 | - Test Backend APIs using Swagger/Postman with real JWT tokens generated from Cognito. | 27/06/2026 | 27/06/2026 |  |
 
 
 ### Week 10 Achievements:

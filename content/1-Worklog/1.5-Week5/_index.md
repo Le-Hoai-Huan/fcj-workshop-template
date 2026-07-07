@@ -1,5 +1,5 @@
 ---
-title: "Week 5 Worklog: CI/CD & CodePipeline"
+title: "Week 5 Worklog: VM Import & Container Fundamentals"
 date: 2026-07-07
 weight: 5
 chapter: false
@@ -7,22 +7,21 @@ pre: " <b> 1.5. </b> "
 ---
 
 ### Week 5 Objectives:
-- Understand the core concepts of VM Import, Docker.
-- Gain hands-on experience by completing the assigned lab modules.
-- Learn how to troubleshoot and verify configurations in AWS.
+- Migrate on-premises virtual machines to AWS using VM Import/Export.
+- Understand containerization concepts and build Docker images.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | - Prepare prerequisite resources for Module 14<br>- Review theoretical concepts of VM Import | 27/04/2026 | 27/04/2026 | <https://000014.awsstudygroup.com> |
-| 2 | - Configure VM Import based on lab guidelines<br>- Deploy infrastructure components for Module 14 | 28/04/2026 | 28/04/2026 | <https://000014.awsstudygroup.com> |
-| 3 | - Complete remaining steps for Module 14<br>- Clean up temporary resources used during Module 14 | 29/04/2026 | 29/04/2026 | <https://000014.awsstudygroup.com> |
-| 4 | - Read AWS documentation and best practices for Docker<br>- Prepare prerequisite resources for Module 15 | 30/04/2026 | 30/04/2026 | <https://000015.awsstudygroup.com> |
-| 5 | - Configure Docker based on lab guidelines<br>- Start hands-on implementation of Module 15 | 01/05/2026 | 01/05/2026 | <https://000015.awsstudygroup.com> |
-| 6 | - Clean up temporary resources used during Module 15<br>- Test and verify the Docker configuration | 02/05/2026 | 02/05/2026 | <https://000015.awsstudygroup.com> |
+| 2 | - Concepts of AWS VM Import/Export<br>- Prepare environment and virtual machine images (OVA, VMDK)<br>- Configure IAM Roles and S3 buckets for images | 18/05/2026 | 18/05/2026 | <https://000014.awsstudygroup.com> |
+| 3 | - Use AWS CLI to import VM into an EC2 AMI<br>- Monitor the import/export progress<br>- Launch an EC2 instance from the imported AMI | 19/05/2026 | 19/05/2026 | <https://000014.awsstudygroup.com> |
+| 4 | - Verify system configurations post-import<br>- Clean up temporary S3 files<br>- Document the migration workflow | 20/05/2026 | 20/05/2026 | <https://000014.awsstudygroup.com> |
+| 5 | - Learn containerization basics with Docker<br>  + Image, Container, Docker Engine architectures<br>  + Write basic Dockerfiles (FROM, RUN, CMD) | 21/05/2026 | 21/05/2026 | <https://000015.awsstudygroup.com> |
+| 6 | - Build Docker images for a web application (Node.js/Python)<br>- Run and manage containers locally (docker run, ps, stop)<br>- Initialize Amazon ECR and push images | 22/05/2026 | 22/05/2026 | <https://000015.awsstudygroup.com> |
+| 7 | - Test container networking and volumes<br>- Optimize Dockerfile for smaller image size<br>- Document the containerization process | 23/05/2026 | 23/05/2026 | <https://000015.awsstudygroup.com> |
 
 
 ### Week 5 Achievements:
-- Successfully completed hands-on implementations for VM Import, Docker.
-- Verified that all deployed resources function correctly according to lab specifications.
-- Gained confidence in navigating the AWS console and using the associated services.
+- Successfully imported an external VM image and launched it as an EC2 instance.
+- Wrote optimized Dockerfiles and managed local containers efficiently.
+- Pushed custom application images to Amazon Elastic Container Registry (ECR).

@@ -1,5 +1,5 @@
 ---
-title: "Week 3 Worklog: Networking & DNS"
+title: "Week 3 Worklog: Cost Management & Monitoring"
 date: 2026-07-07
 weight: 3
 chapter: false
@@ -7,22 +7,22 @@ pre: " <b> 1.3. </b> "
 ---
 
 ### Week 3 Objectives:
-- Understand the core concepts of AWS Budgets, CloudWatch, AWS Support.
-- Gain hands-on experience by completing the assigned lab modules.
-- Learn how to troubleshoot and verify configurations in AWS.
+- Manage and forecast AWS costs using AWS Budgets and Cost Explorer.
+- Monitor infrastructure health and logs using Amazon CloudWatch.
+- Understand AWS Support Plans and the support request workflow.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | - Review theoretical concepts of AWS Budgets<br>- Read AWS documentation and best practices for AWS Budgets | 13/04/2026 | 13/04/2026 | <https://000007.awsstudygroup.com> |
-| 2 | - Clean up temporary resources used during Module 7<br>- Test and verify the AWS Budgets configuration | 14/04/2026 | 14/04/2026 | <https://000007.awsstudygroup.com> |
-| 3 | - Prepare prerequisite resources for Module 8<br>- Review theoretical concepts of CloudWatch | 15/04/2026 | 15/04/2026 | <https://000008.awsstudygroup.com> |
-| 4 | - Test and verify the CloudWatch configuration<br>- Complete remaining steps for Module 8 | 16/04/2026 | 16/04/2026 | <https://000008.awsstudygroup.com> |
-| 5 | - Prepare prerequisite resources for Module 9<br>- Read AWS documentation and best practices for AWS Support | 17/04/2026 | 17/04/2026 | <https://000009.awsstudygroup.com> |
-| 6 | - Test and verify the AWS Support configuration<br>- Clean up temporary resources used during Module 9 | 18/04/2026 | 18/04/2026 | <https://000009.awsstudygroup.com> |
+| 2 | - Learn advanced cost management with AWS Budgets<br>  + Cost Budget and Usage Budget<br>  + Reserved Instance (RI) and Savings Plans | 04/05/2026 | 04/05/2026 | <https://000007.awsstudygroup.com> |
+| 3 | - Create a Cost Budget to alert on thresholds<br>- Analyze reports using AWS Cost Explorer<br>- Configure email/SNS notifications | 05/05/2026 | 05/05/2026 | <https://000007.awsstudygroup.com> |
+| 4 | - Introduction to Amazon CloudWatch<br>  + Collect and track Metrics<br>  + Setup CloudWatch Dashboards<br>- Monitor EC2 CPU and Network | 06/05/2026 | 06/05/2026 | <https://000008.awsstudygroup.com> |
+| 5 | - Create CloudWatch Alarms for automated alerting<br>- Aggregate logs with CloudWatch Logs<br>- Integrate SNS to send notifications from Alarms | 07/05/2026 | 07/05/2026 | <https://000008.awsstudygroup.com> |
+| 6 | - Learn AWS Support Plans (Basic, Developer, Business, Enterprise)<br>- Analyze costs and benefits of each tier | 08/05/2026 | 08/05/2026 | <https://000009.awsstudygroup.com> |
+| 7 | - Read details on opening Support Requests<br>- Practice creating a simulated Support Request<br>- Learn to use AWS Trusted Advisor | 09/05/2026 | 09/05/2026 | <https://000009.awsstudygroup.com> |
 
 
 ### Week 3 Achievements:
-- Successfully completed hands-on implementations for AWS Budgets, CloudWatch, AWS Support.
-- Verified that all deployed resources function correctly according to lab specifications.
-- Gained confidence in navigating the AWS console and using the associated services.
+- Configured cost and usage budgets with automated alerts to prevent overspending.
+- Set up CloudWatch Dashboards and Alarms to monitor EC2 metrics.
+- Simulated support requests and analyzed the benefits of different support tiers.

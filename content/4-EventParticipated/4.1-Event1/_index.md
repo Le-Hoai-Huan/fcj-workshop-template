@@ -1,126 +1,105 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “FCAJ Community Day”
+
+**Date & Time:** 09:00, May 9, 2026
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Share how AI-era habits, tools, and methods are reshaping the way developers learn, prompt, onboard, and build software
+- Explore practical techniques for improving LLM output quality beyond manual trial-and-error
+- Discuss what makes a fresh graduate genuinely "AI-ready" for today's job market
+- Introduce a structured, agent-based method for AI-driven software development
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Huynh Hoang Long** – Admin of FCAJ - *Addicted to learning like you're addicted to Social Media*
+- **Nguyen Tuan Thinh** – DevOps/Cloud Engineer - *Automated Prompt Engineering: Enhancing LLM Output Quality*
+- **Khang** – Solution Architect - *AI-Ready Freshers*
+- **Thao** - Software development - *BMAD Method*
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Addicted to Learning Like You're Addicted to Social Media
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Social media keeps users hooked through a simple loop: **trigger → action → variable reward → investment**. The same loop can be deliberately redesigned around learning instead of scrolling.
+- Relying on willpower alone doesn't scale — the environment and feedback loop matter more than motivation on any given day.
+- Practical tactics shared: daily triggers (reminders, streaks), small and repeatable learning actions, variable rewards (new insights, small wins, community recognition), and "investment" habits like taking notes or sharing publicly to reinforce the loop.
+- Takeaway: treat consistent learning as a **habit-design problem**, not a discipline problem.
 
-#### Transitioning to modern application architecture – Microservices
+#### Automated Prompt Engineering: Enhancing LLM Output Quality
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Manually tweaking prompts by trial-and-error doesn't scale, and small wording changes can noticeably swing output quality and consistency.
+- An automated approach: define a clear success metric and an evaluation dataset, generate multiple prompt candidates, score them against the dataset (including LLM-as-judge scoring), and keep iterating on the best performer.
+- This turns prompt engineering into a **repeatable, measurable process** instead of guesswork, making it easier to compare prompt versions objectively before shipping them to production.
+- Ties closely into reliability concerns raised elsewhere in the community — you can't fully remove LLM variance, but you can systematically reduce it.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### AI-Ready Freshers
 
-#### Domain-Driven Design (DDD)
+- Fresh graduates now enter a job market where AI tools already handle much of the repetitive, boilerplate work — so "knowing how to prompt" alone is no longer a differentiator.
+- What actually sets an AI-ready fresher apart: **strong fundamentals** (data structures, systems thinking, debugging skills), the ability to critically evaluate AI-generated output rather than accept it blindly, and comfort working inside AI-assisted workflows (Copilot, Amazon Q Developer, etc.).
+- Practical advice: build portfolio projects that combine AI tooling with real engineering discipline — testing, version control, code review — instead of relying purely on "vibe coding."
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### BMAD Method
 
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- **BMAD (Breakthrough Method for Agile AI-Driven Development)** structures AI-assisted software development around specialized agent personas — Analyst, PM, Architect, Scrum Master, Developer, QA — each responsible for a distinct phase of the workflow.
+- Instead of relying on one general-purpose AI assistant to do everything in an ad-hoc way, BMAD separates **planning** from **execution**, with each agent producing structured artifacts (PRDs, architecture docs, story files) that hand off cleanly to the next phase.
+- Benefit: keeps AI-driven development aligned with agile practices, improving traceability, consistency, and team alignment across a project instead of relying on one long, unstructured chat session.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Personal Growth Needs System Design, Not Just Willpower
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Consistent learning habits can be engineered the same way product teams engineer engagement loops
+- Small, repeatable actions with visible feedback beat big, unsustainable goals
 
-#### Technical Architecture
+#### Prompting and AI Adoption Need Rigor, Not Just Intuition
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Prompt quality should be measured and iterated on systematically, not tuned by feel
+- Being AI-ready is about judgment and fundamentals, not just knowing prompting tricks
 
-#### Modernization Strategy
+#### Structure Beats Ad-Hoc AI Usage
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- The BMAD Method shows that giving AI agents clearly defined roles and handoffs produces more consistent results than one unstructured assistant
+- This mirrors a broader pattern: AI works best inside well-designed processes, not as a replacement for having a process at all
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Redesign a personal learning habit** using the trigger–action–reward–investment loop (e.g., daily streaks, public write-ups)
+- **Build a lightweight prompt evaluation script** with a small test set before finalizing prompts used in real projects
+- **Use fundamentals-first criteria** when mentoring or evaluating junior engineers working with AI tools
+- **Pilot the BMAD Method** on a small project — split an AI-assisted workflow into distinct Analyst/PM/Architect/Dev/QA roles instead of one long freeform chat
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending **“FCAJ Community Day”** was a refreshing look at the human and process side of working with AI — not just the tools themselves, but the habits and structures around using them well. Key experiences included:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Rethinking learning as a designed habit, not a discipline problem
+- Huynh Hoang Long's talk reframed consistent learning as something you can **engineer**, borrowing the same loops that make social media addictive — but pointed at growth instead of distraction.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Seeing prompt engineering treated as an engineering discipline
+- Nguyen Tuan Thinh's session showed that prompt quality doesn't have to rely on guesswork — it can be measured, tested, and iterated on like any other engineering artifact.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Reframing what "AI-ready" actually means for new grads
+- Khang's talk was a useful reality check: prompting skill alone won't set freshers apart — strong fundamentals and critical judgment over AI output will.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Discovering a structured way to do AI-driven development
+- Thao's introduction to the **BMAD Method** stood out as a concrete answer to a problem many of us have felt — that one long, unstructured AI chat doesn't scale well for real software projects.
 
 #### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- Both learning and prompting benefit from **treating them as systems to design**, not things to simply try harder at.
+- AI tools amplify whatever process they're plugged into — a good process makes them far more effective.
+- "AI-ready" is a mindset and skill set, not just familiarity with a chat interface.
 
 #### Some event photos
-*Add your event photos here*  
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![FCAJ Community Day - Event 1 photo 1](/images/4-Event/4.1-Event1/image1.jpg)
+
+> Overall, the event connected personal learning habits, prompt engineering rigor, career readiness, and structured AI-driven development into a single theme: using AI well is mostly about the systems and discipline you build around it.

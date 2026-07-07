@@ -1,57 +1,28 @@
 ---
-title: "Week 9 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Week 9 Worklog: Project Research & Architecture Design"
+date: 2026-07-07
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 9 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Analyze the PeriodIQ system architecture requirement (7-layer serverless design on AWS).
+- Scope the CI/CD, Auth & User Profile workstreams.
+- Setup initial team access and environment.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | - Team meeting: reviewed the PeriodIQ system architecture (7-layer serverless design on AWS) and divided the project into 5 role groups | 25/05/2026 | 25/05/2026 | Project Repo |
+| 2 | - Read through the project's technical docs (architecture explanation, DynamoDB schema guide) to understand the full system | 26/05/2026 | 26/05/2026 | Architecture Docs |
+| 3 | - Set up team access on the shared AWS account: created an IAM Group per role and an IAM User | 27/05/2026 | 27/05/2026 | IAM Console |
+| 4 | - Research and finalize the AWS services for the assigned layer (Auth & User Profile). Read AWS docs on Cognito, API Gateway | 28/05/2026 | 28/05/2026 | AWS Docs |
+| 5 | - Sketch the architecture diagram for the Auth layer. Identify integration points. | 29/05/2026 | 29/05/2026 | Draw.io Diagram |
+| 6 | - Present the initial architecture design to the team. Gather feedback and refine the authentication flow. | 30/05/2026 | 30/05/2026 | Meeting Notes |
 
 
 ### Week 9 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Successfully reviewed the project's technical docs and architecture explanation.
+- Set up team access via IAM Groups and Users.
+- Finalized the AWS services for the assigned Auth layer.

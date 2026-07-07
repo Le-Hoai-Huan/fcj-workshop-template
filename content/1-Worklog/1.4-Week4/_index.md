@@ -1,57 +1,28 @@
 ---
-title: "Week 4 Worklog"
-date: 2024-01-01
-weight: 1
+title: "Week 4 Worklog: Containers & ECS"
+date: 2026-07-07
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Understand the core concepts of Route 53, AWS CLI, AWS Backup.
+- Gain hands-on experience by completing the assigned lab modules.
+- Learn how to troubleshoot and verify configurations in AWS.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 1 | - Read AWS documentation and best practices for Route 53<br>- Prepare prerequisite resources for Module 10 | 20/04/2026 | 20/04/2026 | <https://000010.awsstudygroup.com> |
+| 2 | - Test and verify the Route 53 configuration<br>- Clean up temporary resources used during Module 10 | 21/04/2026 | 21/04/2026 | <https://000010.awsstudygroup.com> |
+| 3 | - Read AWS documentation and best practices for AWS CLI<br>- Review theoretical concepts of AWS CLI | 22/04/2026 | 22/04/2026 | <https://000011.awsstudygroup.com> |
+| 4 | - Clean up temporary resources used during Module 11<br>- Test and verify the AWS CLI configuration | 23/04/2026 | 23/04/2026 | <https://000011.awsstudygroup.com> |
+| 5 | - Prepare prerequisite resources for Module 13<br>- Read AWS documentation and best practices for AWS Backup | 24/04/2026 | 24/04/2026 | <https://000013.awsstudygroup.com> |
+| 6 | - Test and verify the AWS Backup configuration<br>- Clean up temporary resources used during Module 13 | 25/04/2026 | 25/04/2026 | <https://000013.awsstudygroup.com> |
 
 
 ### Week 4 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Successfully completed hands-on implementations for Route 53, AWS CLI, AWS Backup.
+- Verified that all deployed resources function correctly according to lab specifications.
+- Gained confidence in navigating the AWS console and using the associated services.

@@ -1,59 +1,28 @@
 ---
-title: "Worklog Tuần 10"
-date: 2024-01-01
-weight: 2
+title: "Worklog Tuần 10: Thiết kế Kiến trúc & Thiết lập Cognito"
+date: 2026-07-07
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 10:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Khởi tạo Cognito User Pool và cấu hình luồng xác thực.
+- Phát triển các Lambda trigger và API Gateway endpoint cho User Profile.
+- Đảm bảo tính liên kết giữa API Gateway, Lambda và DynamoDB.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 1 | - Khởi tạo Cognito User Pool qua Console. Cấu hình chính sách mật khẩu và cài đặt MFA. | 01/06/2026 | 01/06/2026 | Screenshot AWS Console - Cognito |
+| 2 | - Cấu hình App Clients và domain cho Cognito. Kiểm thử hosted UI cho đăng ký và đăng nhập. | 02/06/2026 | 02/06/2026 | Screenshot AWS Console - App Client |
+| 3 | - Phát triển hàm Lambda `periodiq-auth-post-confirmation` 📄. Thêm IAM role để Lambda ghi vào DynamoDB. | 03/06/2026 | 03/06/2026 | Screenshot AWS Console - Lambda |
+| 4 | - Thiết lập API Gateway route `ANY /api/users/profile` 📄. Tạo các resource và method tương ứng. | 04/06/2026 | 04/06/2026 | Screenshot AWS Console - API Gateway |
+| 5 | - Tích hợp API Gateway với Cognito Authorizer. Đảm bảo các endpoint được bảo vệ bằng JWT token. | 05/06/2026 | 05/06/2026 | JWT Integration Docs |
+| 6 | - Kiểm thử luồng đăng ký và đăng nhập bằng Postman. Xác minh token được truyền đúng. | 06/06/2026 | 06/06/2026 | Postman Evidence |
 
 
 ### Kết quả đạt được tuần 10:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Triển khai Cognito User Pool với các chính sách mật khẩu tùy chỉnh và App Clients.
+- Kiểm thử thành công các API Gateway route được tích hợp với Lambda và DynamoDB.
+- Giả lập thành công luồng đăng ký và đăng nhập của người dùng.

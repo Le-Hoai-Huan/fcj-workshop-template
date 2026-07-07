@@ -1,126 +1,120 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-05-23
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “FCAJ Community Day”
 
+**Date & Time:** 09:00, May 23, 2026
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Bring together AWS community builders, engineers, and students to share hands-on experience across AI, cloud architecture, and modern application delivery
+- Explore the practical side of building with LLMs — from reliability quirks to context engineering
+- Showcase real production and hackathon case studies from community members
+- Deep-dive into Amazon CloudFront as a foundation for cost, security, and performance at the edge
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Duc Dao** – Solution Architect, Cloud Kinetics — *Non-Determinism of “Deterministic” LLM Settings*
+- **Vy Lam** – Senior Business Systems Analyst, VPBank — *Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring*
+- **Pham Ng Hai Anh** – AWS Community Builder, G-AsiaPacific Vietnam — *Friendly AI Assistant w/ Amazon Quick*
+- **Nguyen Tuan Thinh** – DevOps Engineer, First Cloud AI Journey — *From Edge to Origin: CloudFront as Your Foundation*
+- **Tinh Truong** – Platform Engineer, GoTymeX — *Context Is Everything*
+- **Team VIB** – LotusHacks 2026 finalists — *UTMorpho: Building UTMorpho from Idea to Reality*
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Non-Determinism of “Deterministic” LLM Settings
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- `temperature=0` is assumed to guarantee reproducible outputs, but research (Atil et al., 2024) found **zero models delivered consistent outputs** across all tested tasks — accuracy varied up to 15%, and best-to-worst accuracy gaps reached 70%
+- Root cause: **non-associative floating-point arithmetic on GPUs** plus **inference batching**, where your request's computation depends on what else is in the batch
+- Mitigation strategies: multiple runs + majority voting, structured/constrained outputs, self-hosted models for full control, and designing downstream logic to treat LLM output as **probabilistic, not deterministic**
+- Practical tip: `temp=0.1` is often a safer sweet spot than `temp=0` to avoid the model getting stuck in repetitive loops
 
-#### Transitioning to modern application architecture – Microservices
+#### Enterprise-Grade Multi-Agent System — Startup Credit Scoring
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Traditional credit scoring models fail on startups because they're built around 3+ years of financials and standardized reporting — not 6-18 months of hypergrowth and unstructured data
+- A **single agent** struggles with multi-domain expertise, conflicting objectives, and auditability — it works, but produces unreliable output for high-stakes decisions
+- The proposed **virtual credit committee**: specialized agents (Financial, Market, Team, Risk, Compliance) collaborate under a Manager agent to produce a consensus score, risk rating, confidence level, and full audit trail
+- Enterprise-grade thinking spans six pillars: **security, data governance, network, operations, human factors, and compliance** — measured ROI showed 95% faster processing and 200–300% 3-year ROI
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Friendly AI Assistant with Amazon Quick
 
-#### Domain-Driven Design (DDD)
+- Business users face repetitive, time-consuming tasks that require pulling and analyzing information across multiple sources
+- **Amazon Quick Suite** provides a unified, secure experience combining company data, world knowledge, 40+ data connectors, and agentic capabilities (automation flows, dashboards, chat, research) under one governed layer with guardrails and access controls
+- Demoed use case: a PM assistant that automatically creates meeting minutes, emails stakeholders, and schedules follow-ups
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### From Edge to Origin: CloudFront as Your Foundation
 
-#### Event-Driven Architecture
+- Usage-based CDN billing is hard to forecast — a bill can range from $0.03 to a $100K spike from viral traffic or attacks
+- New **fixed-price CDN + security plans** (launching Nov 2025) bundle CloudFront, WAF, DDoS protection, Route 53, and CloudWatch logging into one predictable monthly price
+- CloudFront materially improves **cost** (compression, free AWS-origin data transfer), **security** (TLS 1.3/mTLS, Origin Shield/OAC/VPC origins to cloak origins, signed URLs), **resiliency** (multi-layer caching, origin failover, graceful degradation), and **performance** (HTTP/3, persistent backbone connections, edge compute)
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Context Is Everything
 
-#### Compute Evolution
+- Most disappointing AI answers come from **poor context, not bad models** — AI can't infer your goal or read your mind
+- Common mistakes: dumping everything into a chat ("internet puller" problem), restating what the model already knows, and giving no goal/constraints/success criteria
+- AI usage is evolving from single **prompts** → grounded **context** → persistent **memory** (store → retrieve → generate → learn), illustrated through a “Second AI Brain” case study
+- A simple framework before asking AI anything: **Goal, relevant info, constraints, success criteria**
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### UTMorpho — Building a Product in 36 Hours (LotusHacks 2026)
 
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- A team retrospective on going from “head empty” at sign-up to shipping UTMorpho within a 36-hour hackathon sprint
+- Key challenges faced: AI overgeneration, token limits, and burnout close to pitch time — overcome through focused editing and better team sync
+- Takeaway: **real frustration creates real ideas**, but more ideas are not automatically better ideas — endurance and team alignment matter as much as the tech
 
 ### Key Takeaways
 
-#### Design Mindset
+#### AI Reliability Is a Design Problem, Not Just a Model Problem
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Determinism settings like `temp=0` reduce but don't eliminate randomness — build systems that tolerate variance
+- Multi-agent architectures beat single agents for auditable, high-stakes, multi-domain decisions
 
-#### Technical Architecture
+#### Context Engineering Is Becoming a Core Skill
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Better context — not more context — drives better AI output
+- The shift from prompting to context systems to long-term memory is the next skill gap to close
 
-#### Modernization Strategy
+#### Infrastructure Foundations Still Matter
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- CloudFront's edge capabilities (security, cost predictability, performance) are foundational even in an AI-heavy stack
+- Enterprise-grade thinking (security, governance, compliance) must be designed in from day one, not bolted on later
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Treat LLM output as probabilistic**: add majority-voting or structured-output constraints for any pipeline relying on `temp=0` for consistency
+- **Prototype a multi-agent pattern** for any workflow currently forced onto a single, overloaded agent
+- **Apply the four-part context framework** (goal, relevant info, constraints, success criteria) before writing prompts for real tasks
+- **Evaluate CloudFront's fixed-price plans** for any project with unpredictable traffic to avoid bill-shock scenarios
+- **Try Amazon Quick Suite** for repetitive business workflows (meeting notes, stakeholder updates, scheduling)
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending **“FCAJ Community Day”** was a great opportunity to see how different parts of the AWS community — from enterprise engineers to hackathon builders — are applying AI and cloud fundamentals in very different, very practical ways. Key experiences included:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from community practitioners, not just official docs
+- Speakers shared **first-hand findings**, like the LLM determinism research, rather than just marketing talking points.
+- The startup credit scoring case study showed how **multi-agent design** solves real auditability problems in regulated industries like banking.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Connecting infrastructure and AI concerns
+- The CloudFront session was a useful reminder that **edge and networking fundamentals** are still critical, even in an AI-centric roadmap.
+- The context engineering talk reframed prompting as a **product experience problem**, not just a wording trick.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Seeing the builder side of the community
+- The LotusHacks retrospective from Team VIB was a candid look at what a 36-hour build sprint actually feels like — including the failures, not just the demo.
+- It reinforced that **team sync and endurance** are as important as raw technical skill under time pressure.
 
 #### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- Reliability in AI systems has to be **engineered**, not assumed from a temperature setting.
+- Good context design and good infrastructure design follow the same principle: **give the system exactly what it needs, no more, no less**.
+- Community events like this surface practical lessons that are hard to find in official documentation alone.
 
 #### Some event photos
-*Add your event photos here*  
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![FCAJ Community Day - Event 2 photo 1](/images/4-Event/4.2-Event2/image2.png)
+
+> Overall, the event connected AI reliability, agentic system design, context engineering, and cloud infrastructure fundamentals into one coherent picture — and reinforced that solid engineering practices matter just as much in the AI era as they always have.

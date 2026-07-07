@@ -1,59 +1,28 @@
 ---
-title: "Worklog Tuần 11"
-date: 2024-01-01
-weight: 2
+title: "Worklog Tuần 11: Bảo mật Biên & Tích hợp WAF"
+date: 2026-07-07
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Bảo mật API và hạ tầng frontend bằng AWS WAF và CloudFront.
+- Giám sát các sự kiện xác thực và log thông qua CloudWatch.
+- Thu thập minh chứng (evidence) cho báo cáo workshop.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 1 | - Tạo CloudFront distribution `periodiq-frontend-dev` 📄 cho dự án. Kiểm thử endpoint. | 08/06/2026 | 08/06/2026 | Screenshot AWS Console - CloudFront |
+| 2 | - Định nghĩa WAF Web ACLs và các tập quy tắc quản lý. Thêm AWS Managed Rules cho các lỗ hổng phổ biến. | 09/06/2026 | 09/06/2026 | Screenshot AWS Console - WAF Rules |
+| 3 | - Cài đặt quy tắc giới hạn tốc độ (rate limit) để chống DDoS trên các endpoint xác thực. | 10/06/2026 | 10/06/2026 | WAF Block Evidence |
+| 4 | - Đính kèm WAF vào CloudFront distribution và API Gateway. Xác minh các header phản hồi. | 11/06/2026 | 11/06/2026 | CloudFront / WAF Headers |
+| 5 | - Giả lập truy cập độc hại để kiểm thử tính năng chặn của WAF. Giám sát các metric WAF trong CloudWatch. | 12/06/2026 | 12/06/2026 | CloudWatch Metrics |
+| 6 | - Sinh tài khoản test và kiểm tra CloudWatch logs có `POST /api/users/login` 📄 với HTTP 200. | 13/06/2026 | 13/06/2026 | CloudWatch Log Evidence |
 
 
 ### Kết quả đạt được tuần 11:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Tạo thành công CloudFront distribution được tích hợp với AWS WAF Web ACLs.
+- Xác minh các quy tắc WAF chặn hiệu quả các request độc hại.
+- Thu thập đầy đủ ảnh chụp màn hình và log CloudWatch phản ánh toàn bộ luồng Xác thực.

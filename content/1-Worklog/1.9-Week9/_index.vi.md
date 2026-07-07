@@ -1,59 +1,28 @@
 ---
-title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+title: "Worklog Tuần 9: Nghiên cứu dự án & Thiết kế kiến trúc"
+date: 2026-07-07
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 9:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Phân tích yêu cầu kiến trúc hệ thống PeriodIQ (thiết kế serverless 7 lớp trên AWS).
+- Lên phạm vi công việc cho phân hệ Auth & User Profile.
+- Thiết lập quyền truy cập nhóm và môi trường ban đầu.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 1 | - Họp nhóm: xem xét kiến trúc hệ thống PeriodIQ (thiết kế serverless 7 lớp trên AWS) và chia dự án thành 5 nhóm role | 25/05/2026 | 25/05/2026 | Project Repo |
+| 2 | - Đọc tài liệu kỹ thuật của dự án (giải thích kiến trúc, hướng dẫn schema DynamoDB) để hiểu toàn bộ hệ thống | 26/05/2026 | 26/05/2026 | Architecture Docs |
+| 3 | - Thiết lập quyền truy cập cho nhóm trên tài khoản AWS chung: tạo IAM Group cho mỗi role và IAM User | 27/05/2026 | 27/05/2026 | IAM Console |
+| 4 | - Nghiên cứu và chốt danh sách các dịch vụ AWS cho phân tầng được giao (Auth & User Profile). Đọc tài liệu về Cognito, API Gateway | 28/05/2026 | 28/05/2026 | AWS Docs |
+| 5 | - Vẽ sơ đồ kiến trúc cho lớp Xác thực. Xác định các điểm tích hợp. | 29/05/2026 | 29/05/2026 | Draw.io Diagram |
+| 6 | - Trình bày thiết kế kiến trúc ban đầu với nhóm. Thu thập phản hồi và tinh chỉnh luồng xác thực. | 30/05/2026 | 30/05/2026 | Meeting Notes |
 
 
 ### Kết quả đạt được tuần 9:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành việc đọc hiểu tài liệu kỹ thuật và giải thích kiến trúc của dự án.
+- Thiết lập quyền truy cập cho nhóm thông qua IAM Groups và Users.
+- Chốt danh sách các dịch vụ AWS cho phân tầng Auth được giao.

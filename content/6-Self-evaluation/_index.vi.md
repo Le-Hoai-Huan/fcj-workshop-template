@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 Trong suốt 12 tuần thực tập tại **First Cloud AI Journey (FCAJ)** từ **20/04/2026** đến **12/07/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng các kiến thức lập trình vào một hệ thống Cloud thực tế quy mô lớn.  
 
-Tôi đã tham gia vào dự án **PeriodIQ - Serverless Periodization Engine** với vai trò **Người 1 (Auth & User Profile)**. Qua dự án này, tôi đã cải thiện vượt bậc các kỹ năng:
+Tôi đã tham gia vào dự án **PeriodIQ** với vai trò **Người 1 (Auth & User Profile)**. Qua dự án này, tôi đã cải thiện vượt bậc các kỹ năng:
 - **Kỹ năng chuyên môn:** Làm chủ AWS Cognito, AWS WAF, Amazon CloudFront; lập trình Backend với .NET 10 (Clean Architecture, xUnit, Moq); và phát triển Frontend với React 19 + Vite.
 - **Kỹ năng mềm:** Phân tích thiết kế hệ thống, làm việc nhóm qua Git/GitHub, viết tài liệu kỹ thuật (documentation) và kỹ năng quản lý thời gian.
 

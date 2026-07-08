@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 During my 12-week internship at **First Cloud AI Journey (FCAJ)** from **20/04/2026** to **12/07/2026**, I had the opportunity to learn, practice, and apply my programming knowledge to a large-scale real-world Cloud system.
 
-I participated in the **PeriodIQ - Serverless Periodization Engine** project in the role of **Person 1 (Auth & User Profile)**. Through this project, I have significantly improved the following skills:
+I participated in the **PeriodIQ** project in the role of **Person 1 (Auth & User Profile)**. Through this project, I have significantly improved the following skills:
 - **Technical skills:** Mastering AWS Cognito, AWS WAF, Amazon CloudFront; Backend development with .NET 10 (Clean Architecture, xUnit, Moq); and Frontend development with React 19 + Vite.
 - **Soft skills:** System architecture analysis, teamwork via Git/GitHub, writing technical documentation, and time management.
 

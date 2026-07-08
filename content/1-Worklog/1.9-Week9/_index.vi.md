@@ -14,7 +14,7 @@ pre: " <b> 1.9. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 2 | - Họp nhóm kickoff dự án PeriodIQ, phân tích kiến trúc AWS Serverless 7 lớp và nhận nhiệm vụ Người 1 (Auth & User Profile). | 15/06/2026 | 15/06/2026 |  |
+| 2 | - Tổng duyệt lại toàn bộ kiến trúc AWS Serverless 7 lớp và chi tiết hóa timeline các công việc cho phân hệ Xác thực (Auth). | 15/06/2026 | 15/06/2026 |  |
 | 3 | - Đọc tài liệu thiết kế hệ thống, phân tích luồng xác thực qua Cognito và bảo mật biên với WAF & CloudFront. | 16/06/2026 | 16/06/2026 |  |
 | 4 | - Thiết lập tài khoản AWS Sandbox, nghiên cứu thư viện xác thực JWT cho .NET 10 và TanStack Query cho React. | 17/06/2026 | 17/06/2026 |  |
 | 5 | - Vẽ sơ đồ kiến trúc chi tiết cho phân hệ Xác thực (Cognito -> CloudFront -> WAF -> .NET API). | 18/06/2026 | 18/06/2026 |  |

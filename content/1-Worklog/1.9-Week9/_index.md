@@ -14,7 +14,7 @@ pre: " <b> 1.9. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 2 | - Project kickoff meeting, analyze 7-layer AWS Serverless architecture and assign tasks for Person 1 (Auth & User Profile). | 15/06/2026 | 15/06/2026 |  |
+| 2 | - Review the entire 7-layer AWS Serverless architecture and detail the task timeline for the Auth module. | 15/06/2026 | 15/06/2026 |  |
 | 3 | - Read system design docs, analyze Cognito auth flow and edge security with WAF & CloudFront. | 16/06/2026 | 16/06/2026 |  |
 | 4 | - Setup AWS Sandbox, research JWT auth libraries for .NET 10 and TanStack Query for React. | 17/06/2026 | 17/06/2026 |  |
 | 5 | - Draw detailed architecture diagram for the Auth module (Cognito -> CloudFront -> WAF -> .NET API). | 18/06/2026 | 18/06/2026 |  |

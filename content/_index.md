@@ -16,7 +16,7 @@ chapter: false
 
 &emsp; **Email:** lehoaihuan@gmail.com
 
-&emsp; **University:** ho chi minh city university of technology
+&emsp; **University:** Ho Chi Minh City University of Technology
 
 &emsp; **Major:** Information Technology
 

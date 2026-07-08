@@ -13,7 +13,7 @@ pre: " <b> 1.6. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 2 | - Tìm hiểu Amazon Elastic Container Service (ECS)<br>  + Khái niệm Cluster, Task Definition, Service<br>  + ECS on EC2 vs AWS Fargate | 25/05/2026 | 25/05/2026 | <https://000016.awsstudygroup.com/vi/> |
+| 2 | - Họp nhóm kickoff dự án PeriodIQ, phân tích kiến trúc AWS Serverless và nhận nhiệm vụ.<br>- Tìm hiểu Amazon Elastic Container Service (ECS)<br>  + Khái niệm Cluster, Task Definition, Service<br>  + ECS on EC2 vs AWS Fargate | 25/05/2026 | 25/05/2026 | <https://000016.awsstudygroup.com/vi/> |
 | 3 | - Tạo Task Definition sử dụng image từ ECR<br>- Khởi tạo ECS Cluster với AWS Fargate<br>- Cấu hình ECS Service tích hợp với Application Load Balancer | 26/05/2026 | 26/05/2026 | <https://000016.awsstudygroup.com/vi/> |
 | 4 | - Giám sát metrics của container trên CloudWatch<br>- Kiểm thử tính năng rolling update của ECS Service<br>- Dọn dẹp các tài nguyên ECS | 27/05/2026 | 27/05/2026 | <https://000016.awsstudygroup.com/vi/> |
 | 5 | - Giới thiệu CI/CD trên AWS<br>  + AWS CodeCommit (Source Control)<br>  + AWS CodeBuild (Build & Test)<br>  + AWS CodeDeploy (Deployment) | 28/05/2026 | 28/05/2026 | <https://000017.awsstudygroup.com/vi/> |
